@@ -6,6 +6,27 @@
 
 }
 
+/* felixs stuff */
+.felixbox {
+    border: 5px solid blanchedalmond;
+    border-radius: 15px;
+    background-color:lightblue;
+    width: 800px;
+    padding:20px;
+    /* margin is from the browser */
+    margin: 20px;
+}
+
+.felixfont {
+    font-family: 'Comic Sans MS', cursive;
+}
+
+.felixcenter {
+  padding: 70px 0;
+  text-align: center;
+}
+/* felix's stuff ends here */
+
 /* dont fuck with things that aren't yours, unless they are index.html -alex */
 
 .button{
