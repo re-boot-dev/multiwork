@@ -43,3 +43,13 @@
 .button:hover {
     background: #0056b3;
 }
+
+/*  alex's stuff */
+.trim{
+    max-width:500px;
+    max-height:600px;
+    overflow:hidden;
+}
+
+
+/*  alex's stuff ends here */
