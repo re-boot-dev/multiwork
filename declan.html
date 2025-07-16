@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Hi, I'm Declan!</h1>
+    <div>
+        <img src="components/images/declan.jpeg" alt="Me and my gf" style="width:600px;height:800px;">
+    </div>
+    <div>
+        <h2>Some things about me:</h2>
+        <p>I like to play rhythm games and code</p>
+    </div>
+    <script>
+    function ratingsChange(ratings){
+        if (ratings == 'phigros'){
+            document.getElementById("rating_best").innerHTML = "Rating: 16.32<br>Best play: AbsoluTe disoRdeR AT 99.53%"
+        }
+        if (ratings == 'maimai'){
+            document.getElementById("rating_best").innerHTML = "Rating: 13033<br>Best play: ウミユリ海底譚 Re:MASTER 100.5892%"
+        }
+        if (ratings == 'chunithm'){
+            document.getElementById("rating_best").innerHTML = "Rating: 16.34<br>Best play: Tempestissimo MASTER 15.1 1007775 SSS"
+        }
+        if (ratings == 'pjsk'){
+            document.getElementById("rating_best").innerHTML = "Rating: 32.59<br>Best play: snooze APPEND lv.32 AP<br>Unofficial rating by <a href='https://www.sbuga.com'>sbotga</a>"
+        }
+    }
+    </script>
+    <label for="ratings">Select a game to see my rating and best plays!</label>
+    <select name="ratings" id="ratings" onchange="ratingsChange(this.value)">
+        <option selected="selected"></option>
+        <option value="phigros">Phigros</option>
+        <option value="maimai">maimai</option>
+        <option value="chunithm">CHUNITHM</option>
+        <option value="pjsk">Project sekai</option>
+    </select>
+    <p id="rating_best"></p>
+    <a href="index.html" class="button">Main Page</a>
+</body>
+</html>
